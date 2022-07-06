@@ -16,15 +16,15 @@ export let loader: LoaderFunction = () => {
     resources: [
       {
         name: "Remix Docs",
-        url: "https://remix.run/docs"
+        url: "https://www.adball.online"
       },
       {
         name: "React Router Docs",
-        url: "https://reactrouter.com/docs"
+        url: "https://www.adball.tech"
       },
       {
         name: "Remix Discord",
-        url: "https://discord.gg/VBePs6d"
+        url: "https://www.adball.tech/"
       }
     ],
     demos: [
@@ -50,12 +50,12 @@ export let loader: LoaderFunction = () => {
 // https://remix.run/api/conventions#meta
 export let meta: MetaFunction = () => {
   return {
-    title: "Remix Starter",
+    title: "Remix By Malic",
     description: "Welcome to remix!"
   };
 };
 
-// https://remix.run/guides/routing#index-routes
+// https://www.adball.tech/routing#index-routes
 export default function Index() {
   let data = useLoaderData<IndexData>();
 
@@ -77,7 +77,7 @@ export default function Index() {
         </p>
       </main>
       <aside>
-        <h2>Demos In This App</h2>
+        <h2>Downloads In This App</h2>
         <ul>
           {data.demos.map(demo => (
             <li key={demo.to} className="remix__page__resource">
@@ -87,7 +87,7 @@ export default function Index() {
             </li>
           ))}
         </ul>
-        <h2>Resources</h2>
+        <h2>Best Resources</h2>
         <ul>
           {data.resources.map(resource => (
             <li key={resource.url} className="remix__page__resource">
